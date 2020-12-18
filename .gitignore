@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Tutorial specific
+.aws-sam/
+image_classifier/

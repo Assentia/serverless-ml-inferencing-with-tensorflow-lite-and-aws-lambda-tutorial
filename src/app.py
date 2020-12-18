@@ -15,7 +15,6 @@ def lambda_handler(event, context):
             'statusCode': 400 # Bad Request!
         }
     
-    
     # The event body will have a base64 string containing the image bytes,
     # Deocde the base64 string into bytes
     image_bytes = base64.b64decode(event['body'])

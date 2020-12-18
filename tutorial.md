@@ -99,7 +99,7 @@ model.save('keras_image_classifier')
 
 ## Converting the model to TF Lite format
 
-Now that we have a Keras model, we can follow the [TensorFlow Lite converter - Convert a Keras model](# https://www.tensorflow.org/lite/convert#convert_a_keras_model_) guide to convert it to `.tflite` format.
+Now that we have a Keras model, we can follow the [TensorFlow Lite converter - Convert a Keras model](https://www.tensorflow.org/lite/convert#convert_a_keras_model_) guide to convert it to `.tflite` format.
 
 We'll save the `.tflite` file to the `src` folder where our AWS Lambda source code is stored.
 
@@ -516,10 +516,10 @@ You can try out the other test JSON event files in the `events` folder to ensure
 
 We can now deploy the system to AWS, and the `sam` CLI tool can be used for this.
 
-Make sure to create AWS S3 bucket for this step and replace the `<stack name>`, `<bucket name>` and `<region>` in the command below:
+Make sure to replace the `<stack name>` and `<region>` in the command below:
 
 ```bash
-sam deploy --stack-name <stack name> --s3-bucket <bucket name> --capabilities CAPABILITY_IAM --region u<region>
+sam deploy --stack-name my-tflite-app --resolve-s3 --capabilities CAPABILITY_IAM --region us-east-1
 ```
 
 Now that the app is deployed to AWS we can test it out with the `curl` command.

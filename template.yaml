@@ -102,4 +102,3 @@ Outputs:
   TFLiteFunctionIamRole:
     Description: "Implicit IAM Role created for TF Lite function"
     Value: !GetAtt TFLiteFunctionRole.Arn
-

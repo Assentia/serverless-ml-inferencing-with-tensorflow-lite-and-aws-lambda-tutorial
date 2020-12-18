@@ -1,4 +1,3 @@
-
 # Use https://hub.docker.com/r/lambci/lambda as the base container
 FROM lambci/lambda:build-python3.8 AS stage1
 

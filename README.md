@@ -4,7 +4,7 @@
 
 This GitHub repository contains the resources to support the "Serverless ML Inferencing with TensorFlow Lite and AWS Lambda" blog post on [dev.to](dev.to).
 
-To get started with the Jupter notebook locally, run:
+To get started with the Jupyter notebook locally, run:
 
 ```bash
 git clone https://github.com/Assentia/serverless-ml-inferencing-with-tensorflow-lite-and-aws-lambda-tutorial.git
@@ -17,5 +17,5 @@ python3 -m venv .env
 
 pip install -r requirements.txt
 
-jupyterlab
+jupyter-lab
 ```
