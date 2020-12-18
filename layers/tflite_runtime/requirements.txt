@@ -1,0 +1,4 @@
+# aws_lambda_builders.workflows.python_pip.packager.PackageDownloadError: ERROR: tflite_runtime-2.4.0-cp38-cp38-linux_x86_64.whl is not a supported wheel on this platform.
+#https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.4.0-cp38-cp38-linux_x86_64.whl
+
+tflite_runtime-2.4.0-py3-none-any.whl
