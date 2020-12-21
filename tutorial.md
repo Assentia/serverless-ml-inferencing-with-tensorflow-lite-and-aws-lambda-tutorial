@@ -29,9 +29,26 @@ I'll be walking through an example of this below. To keep the ML model training 
 
 
 You'll need a computer with the following setup:
- - Python 3.8
- - Docker Desktop
- - an [AWS account](https://aws.amazon.com) (if you wish to deploy the REST API)
+* Python 3.8
+* Docker Desktop
+* an [AWS account](https://aws.amazon.com) (if you wish to deploy the REST API)
+
+
+To get started with the [Jupyter](https://jupyter.org) [tutorial.ipynb](https://github.com/Assentia/serverless-ml-inferencing-with-tensorflow-lite-and-aws-lambda-tutorial/blob/main/tutorial.ipynb) notebook locally, run:
+
+```bash
+git clone https://github.com/Assentia/serverless-ml-inferencing-with-tensorflow-lite-and-aws-lambda-tutorial.git
+
+cd serverless-ml-inferencing-with-tensorflow-lite-and-aws-lambda-tutorial
+
+python3 -m venv .env
+
+. .env/bin/activate
+
+pip install -r requirements.txt
+
+jupyter-lab
+```
 
 ## Training our ML model
 
