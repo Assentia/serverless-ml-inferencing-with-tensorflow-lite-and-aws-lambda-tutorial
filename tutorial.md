@@ -18,7 +18,7 @@ The [TensorFlow Lite](https://www.tensorflow.org/lite) project's tag line is:
 
 -- https://www.tensorflow.org/lite
 
-It provides a much smaller runtime focused on ML inferencing on mobile and IoT devices which have more constrained computing environments (CPU, RAM, storage) than cloud computing environments. Luckily TensorFlow Lite provides a [Python based runtime API](https://www.tensorflow.org/lite/guide/python) for Linux based embedded computers, such as the [Raspberry Pi](https://www.raspberrypi.org). After some experimentation, we found it is possible to re-use TensorFlow Lite Python run-time in a AWS Lambda environment. There were a few key steps:
+It provides a much smaller runtime focused on ML inferencing on mobile and IoT devices which have more constrained computing environments (CPU, RAM, storage) than cloud computing environments. Luckily TensorFlow Lite provides a [Python based runtime API](https://www.tensorflow.org/lite/guide/python) for Linux based embedded computers. After some experimentation, we found it is possible to re-use TensorFlow Lite Python run-time in a AWS Lambda environment. There were a few key steps:
 
 1. Creating a custom AWS Lambda layer for the TensorFlow Lite Python runtime. This involved compiling the TensorFlow source code to create the TF Lite Python runtime in the AWS Lambda Python [Docker](https://www.docker.com) build container. With dependencies, the installed package size for this is 53 MB, which is approximately 17x smaller than regular TensorFlow!
 
